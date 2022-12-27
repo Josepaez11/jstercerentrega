@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Pako Peko</title>
+    <meta property="og:locale" content="Es_es">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Pako Peko">
+    <meta property="og:description" content="Ropa para niños inclusiva">
+    <meta property="og:url" content="https://pakopeko.com.ar ">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="icon" type="favicon/x-icon" href="img/logo pako peko.png"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="jquery/jquery-3.6.0.js"> </script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <main id="contenedorPrincipal" class="row">
+            <ul id="menu_index_index" class="col-6 row menu ml-8">
+                <!--  col-8 row-->
+                <li class="col"> <a href="index.html" class="linkInicio aIndex"> INICIO</a></li>
+                <li class="col"> <a href="nosotros.html" class="linkInicio aIndex"> NOSOTROS </a></li>
+                <li class="col"class="linkContacto"> <a href="contacto.html" class="linkContacto aIndex"> CONTACTO</a></li>
+            </ul>
+            <img class="img_logo_index" src="img/logo pako peko.png" alt="Pako peko">
+
+
+            <div id="combos">
+                <h5 id="tituloFiltro">Busca tu producto</h5>
+
+                <select id="comboOperacion">
+
+                    <option value='' disabled selected> Filtrar por coleccion</option>
+                    <option value="Verano">Verano</option>
+                    <option value="Invierno">Invierno</option>
+                    <option value="Media estacion">Media estacion</option>
+                </select>
+
+                <select id="comboPropiedad">
+                    <option value='' disabled selected> Filtrar por tipo de prenda</option>
+                    <option value="Pantalon">Pantalon</option>
+                    <option value="Remera">Remera</option>
+                    <option value="Campera">Campera</option>
+                    <option value="Vestidos">Vestidos</option>
+                </select>
+                <select id="comboDormitorios">
+                    <option value='' disabled selected> Filtrar por Talle</option>
+                    <option value="1">0 - 4</option>
+                    <option value="2">6 -10 </option>
+                    <option value="3">12 - 14</option>
+                    <option value="4">16 - 18</option>
+                </select>
+            </div>
+
+
+
+
+        </main>
+        <div id="contenedorFiltros" class="row">
+            <div class="col-2" id="filtros">
+                <div id="filtrosActivos">
+                    <h6 id="pfiltros">Filtro Activo:</h6>
+                </div>
+                <hr>
+                <p>Precios AR$</p>
+                <p id="pdesde">Desde:</p> <input id="iDesde" type="number">
+                <p id="phasta">Hasta:</p> <input id="iHasta" type="number">
+                <button id="baplicar"> Aplicar</button>
+                <hr>
+
+                <p>Numero de talles</p>
+                <input type="checkbox" id="cboxTalle1" value="cboxTalle1"><label for="cboxTalle1">0-4</label>
+                <br>
+                <input type="checkbox" id="cboxTalle2" value="cboxTalle2"> <label
+                    for="cboxTalle2">6-10</label><br>
+                <input type="checkbox" id="cboxTalle3" value="cboxTalle3"><label for="cboxTalle3">12-14</label> <br>
+                <input type="checkbox" id="cboxTalle4" value="cboxTalle4"><label for="cboxTalle4">16-18</label> <br>
+                <hr>
+
+                <p>Temporada</p>
+                <input type="checkbox" id="cbox1" value="un_cbox"><label for="cbox1">Invierno</label> <br>
+                <input type="checkbox" id="cbox2" value="dos_cbox"> <label for="cbox2">Verano</label><br>
+                <input type="checkbox" id="cbox3" value="tres_cbox"><label for="cbox3">Media estacion</label> <br>
+
+            </div>
+
+            <div class="col-9" id="displayIndex">
+                
+
+            </div>
+
+        </div>
+
+
+        <footer id=footer_index class="row">
+            <div class="col-6">
+                <h3>Acerca de Nosotros:</h3>
+                <h5> Pako Peko: ropa de aventuras </h5>
+                <h5> Direccion: La Prida 556 - Cordoba, Argentina</h5>
+                <h5>Teléfono: 111 111 111</h5>
+                <h5>Email: pakopekook@gmail.com</h5>
+                <hr>
+            </div>
+
+            <div class="col-6">
+                <h3> Seguinos en Instagram: </h3>
+                <h5>pakopeko</h5>
+            </div>
+        </footer>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <script src="js/main.js"></script>
+   
+</body>
+
+</html>

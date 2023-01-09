@@ -218,27 +218,27 @@ footer h5{
 
 
 
-#comboOperacion, #comboPropiedad, #comboDormitorios, #botonBuscar{
+#comboTemporada, #comboTipoprenda, #comboTalles, #botonBuscar{
   position: absolute;
     width: 150px;
     height: 33px;
 }
 
 
-#comboOperacion {
+#comboTemporada {
   top: 250px;
   left: 226px;
   width: 201px;
 }
 
-#comboPropiedad {
+#comboTipoprenda {
   top: 250px;
   left: 429px;
   width: 225px;
 }
 
 
-#comboDormitorios{
+#comboTalles{
   top: 250px;
   left: 659px;
 }
